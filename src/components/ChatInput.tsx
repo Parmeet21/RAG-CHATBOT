@@ -61,7 +61,7 @@ export const ChatInput = () => {
   const isNearLimit = inputLength > maxLength * 0.8;
 
   return (
-    <div className="border-t border-slate-700/50 bg-slate-900/50 backdrop-blur-lg p-4 sm:p-6 overflow-x-hidden">
+    <div className="border-t border-slate-700/50 bg-slate-900/80 backdrop-blur-sm p-4 sm:p-6 overflow-x-hidden relative z-10 flex-shrink-0">
       {/* Example Questions */}
       {messages.length === 0 && (
         <motion.div

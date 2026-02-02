@@ -9,9 +9,11 @@ function App() {
     <ChatProvider>
       <div className="flex h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden relative">
         <ConversationHistory />
-        <div className="flex-1 flex flex-col overflow-hidden min-w-0">
+        <div className="flex-1 flex flex-col overflow-hidden min-w-0 relative">
           <ChatContainer />
-          <ChatInput />
+          <div className="relative z-10">
+            <ChatInput />
+          </div>
         </div>
         <DocumentViewer />
       </div>
